@@ -10,7 +10,16 @@ public class MessagingApplication {
 
         return "Hello From Bridgelabz";
     }
+
+    // UC-2 Code
+    @GetMapping("/hello/query")
+    public String fetchName(@RequestParam String name){
+
+        return "Hello "+name;
+    }
 }
+
+
 
 
 
