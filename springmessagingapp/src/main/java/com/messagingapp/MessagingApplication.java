@@ -17,6 +17,12 @@ public class MessagingApplication {
 
         return "Hello "+name;
     }
+
+    @GetMapping("/hello/param/{name}")
+    public String fetchNameWithPath(@PathVariable String name) {
+        return "Hello " + name + " from BridgeLabz";
+    }
+
 }
 
 
