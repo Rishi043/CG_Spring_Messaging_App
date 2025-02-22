@@ -29,6 +29,12 @@ public class MessagingApplication {
         return "Hello " + user.getFirstName() + " " + user.getLastName() + " from BridgeLabz";
     }
 
+    // UC-5 Code
+    @RequestMapping("/hello/put/{firstName}")
+    public String greetUserPut(@PathVariable String firstName, @RequestParam String lastName) {
+        return "Hello " + firstName + " " + lastName + " from BridgeLabz";
+}
+
 }
 
 
